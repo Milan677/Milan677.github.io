@@ -151,6 +151,25 @@ input[type="checkbox"]{
   width: 100%;
   height:100%
 }
+#resume-button-2{
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  display: inline-block;
+  background-color: orangered;
+  color:#FFF;
+  border: none;
+  border-radius: 10px;
+  padding:10px 25px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#resume-link-2{
+  text-decoration: none;
+  color: #FFF;
+  letter-spacing: 1px;
+}
  .home-btn {
   font-size: 15px;
   letter-spacing: 2px;
@@ -159,17 +178,22 @@ input[type="checkbox"]{
   display: inline-block;
   background-color: orangered;
   color:#FFF;
+  border: none;
   border-radius: 10px;
   padding:10px 25px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
 }
+.a{
+  text-decoration: none;
+  color: #FFF;
+}
 .fa-download { 
   transition: all 0.5s ease;
 }
 
-.home-btn:hover .fa-download {
+#resume-button-2:hover .fa-download ,#resume-button-1:hover .fa-download{
   transform: rotate(360deg);
 }
 /* Gradient animation for the button */
@@ -194,6 +218,12 @@ input[type="checkbox"]{
   letter-spacing: 15px;
   /* border:2px solid green; */
     
+}
+#resume-button-1{
+  background: orangered;
+  color:#fff;
+  border: none;
+  border-radius: 5px;
 }
 
 
