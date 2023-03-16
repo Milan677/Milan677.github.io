@@ -196,6 +196,7 @@ input[type="checkbox"]{
     
 }
 
+
 /*============ About session ===============*/
 #about{
   height:600px;
@@ -382,7 +383,7 @@ input[type="checkbox"]{
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #d03645;
+	background-color: orangered;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
@@ -423,7 +424,7 @@ input[type="checkbox"]{
 	height: 3px;
 	top: calc(125% - 1px);
 	left: 0;
-	background-color: #d03645;
+	background-color: orangered;
 }
 .subject{
 	font-size: 18px;
@@ -452,7 +453,7 @@ input[type="checkbox"]{
 	position: absolute;
 	width: 0%;
 	height: 7px;
-	background-color: #d03645;
+	background-color: orangered;
 	border-radius: 15px;
 	top: -1px;
 	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
@@ -471,7 +472,7 @@ input[type="checkbox"]{
 	top: 50%;
 	left: 100%;
 	transform: translate(-50%, -50%);
-	background-color: #d03645;
+	background-color:orangered;
 }
 /* @media(max-width: 768px){
 	#skills{
@@ -529,7 +530,7 @@ input[type="checkbox"]{
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #d03645;
+	background-color:orangered;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
@@ -632,7 +633,7 @@ input[type="checkbox"]{
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #d03645;
+	background-color:orangered;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
@@ -679,7 +680,7 @@ input[type="checkbox"]{
 .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
-  color: #afafb6;
+  color: #fdfdff;
   text-decoration: none;
 }
 #contact .content .right-side{
@@ -734,6 +735,9 @@ input[type="checkbox"]{
 }
 .button input[type="button"]:hover{
   background: rgb(202, 64, 13);
+}
+.topic{
+    color: #afafb6;
 }
 
 @media (max-width: 950px) {
