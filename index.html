@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--------- <title>Responsive Navigation Menu</title>------>
+
+  <!-- animate scroll package -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- animate scroll package end -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav id="nav-menu">
+    <!-- <div class="logo animated-text">Kamlesh</div> -->
+    <div class="logo"><span class="k-animation logo">K</span>amlesh</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active nav-link home" href="#home">Home</a></li>
+      <li><a class="nav-link about" href="#about">About</a></li>
+      <li><a  href="#service">Service</a></li>
+      <li><a class="nav-link skills" href="#skills">Skills</a></li>
+      <li><a class="nav-link projects" href="#projects">Projects</a></li>
+      <li><a class="nav-link contact" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="home" class="content">
+    <div class="left">
+      <div class="up-down-animation">
+        <img class="home-img" src="https://dp.profilepics.in/profile_pictures/dp_for_boys/dp_for_boys_whatsapp_facebook_76.jpg" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <h5>Hello !</h5>
+      <h3>I'am <span id="user-detail-name">Kamlesh Das</span></h3>
+      <!-- <h4 class="auto-input"></h4> -->
+      <!-- <p>a full-stack developer</p> -->
+      <p id="user-detail-intro"> An aspiring full Stack Developer. I love to make projects which are helpful for masses and serve as a great
+        helpful entity.</p>
+      <div class="icon">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+      <a  id="resume-link-2" class="home-btn">Download cv <i class="fa-sharp fa-solid fa-download"></i></a>
+      <a class="home-btn" href="#about">About me </a>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="main-title">
+      <h1 class="text">About</h1>
+    </div>
+    <div>
+      <div class="about-left">
+        <div class="about-image">
+          <img src="https://i.pinimg.com/originals/df/4c/9f/df4c9f22a28646e0ac084c718bc71dd9.jpg" alt="">
+        </div>
+      </div>
+      <div class="about-right">
+        <p>I'm <span>Kamlesh Das</span> and I'm <span class="auto-input"></span></p><br>
+        <p>A passionate NODE JS Back-End Developer, Dedicated to developing robust applications that interact with the
+          Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web
+          API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed.
+          Love to work in a team.</p><br>
+        <table class="about section">
+          <tr>
+            <td class="table-left">Name:</td>
+            <td>Kamlesh Das</td>
+          </tr>
+          <tr>
+            <td class="table-left">Date of birth:</td>
+            <td>September 04,2001</td>
+          </tr>
+          <tr>
+            <td class="table-left">Address:</td>
+            <td>Kumandala patana,Odhisha</td>
+          </tr>
+          <tr>
+            <td class="table-left">Zip code:</td>
+            <td>752034</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="service">
+    <div class="main-title">
+      <h1 class="text">My Services</h1>
+    </div>
+
+    <br>
+    <div class="service">
+      <div class="serv">
+        <i class="fa-solid fa-paintbrush"></i>
+        <h2>Web Design</h2>
+        <p>Proficient in providing web designs</p>
+      </div>
+      <div class="serv">
+        <i class=" fas fa-regular fa-chart-line"></i>
+        <h2>Rest Api</h2>
+        <p>Providing exceptional Rest API'S</p>
+      </div>
+      <div class="serv">
+        <i class="fas fa-regular fa-code"></i>
+        <h2>Backend Developer</h2>
+        <p>Proficient in backend node application</p>
+      </div>
+      <div class="serv">
+        <i class="fa-solid fa-database"></i>
+        <h2>Database Management</h2>
+        <p>proficient to handel mongodb database</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- skill session start -->
+  <div id="skills">
+    <!--   *******  Main Heading Starts  *******   -->
+
+    <div class="main-title">
+      <h1 class="text">My Skills</h1>
+      <p class="text">Here is my skills to represent you my Expertise</p>
+    </div>
+
+    <!--   *******  Main Heading Ends  *******   -->
+
+    <div class="row">
+
+      <!--   *******  Left Section Starts here  *******   -->
+
+      <section class="col col-left">
+
+        <div class="sub-title">
+          <h2>Frontend Skills</h2>
+        </div>
+
+        <div class="skills-container">
+
+          <div class="skill">
+            <div class="subject skills-card-name">HTML</div>
+            <div class="progress-bar" value="94%">
+              <div class="progress-line" style="max-width: 94%"></div>
+            </div>
+          </div>
+
+          <div class="skill skills-card-name">
+            <div class="subject">CSS</div>
+            <div class="progress-bar" value="83%">
+              <div class="progress-line" style="max-width: 83%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="subject skills-card-name">JavaScript</div>
+            <div class="progress-bar" value="88%">
+              <div class="progress-line" style="max-width: 88%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="subject skills-card-name">Bootstrap</div>
+            <div class="progress-bar" value="48%">
+              <div class="progress-line" style="max-width: 48%"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--   ********  Left Section Ends Here  *******  -->
+
+      <!--   ********  Right Section Starts Here  ********  -->
+
+      <section class="col col-right">
+
+        <div class="sub-title">
+          <h2>Backend Skills</h2>
+        </div>
+
+        <div class="skills-container">
+
+          <div class="skill">
+            <div class="subject skills-card-name">Node.js</div>
+            <div class="progress-bar" value="82%">
+              <div class="progress-line" style="max-width: 82%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="subject skills-card-name">Express.js</div>
+            <div class="progress-bar" value="74%">
+              <div class="progress-line" style="max-width: 74%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="subject skills-card-name">MongoDB</div>
+            <div class="progress-bar" value="63%">
+              <div class="progress-line" style="max-width: 63%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="subject skills-card-name">Responsive Design</div>
+            <div class="progress-bar" value="91%">
+              <div class="progress-line" style="max-width: 91%"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--   ********  Right Section Ends Here  ********   -->
+    </div>
+  </div>
+  <!-- skill session end -->
+
+  <!-- project session start -->
+  <div id="projects">
+    <div class="main-title">
+      <h1 class="text">My Projects</h1>
+      <p class="text">Here is my projects to represent you my Experience</p>
+    </div>
+    <div class="inner">
+      <div class="project-card">
+        <img src="image/Screenshot (8).png" alt="">
+        <h2 class="project-title">Hot Chicken</h2><br>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
+          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <br>
+        <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT</p>
+        <br>
+        <div class="project-link">
+          <a class="project-github-link" href="https://github.com/Milan677/ossified-silver-2473"><i
+              class="fa-brands fa-github"></i> Git Repo </a><br>
+          <a class="project-deployed-link" href="https://luminous-longma-a8a060.netlify.app/"><i
+              class="fa-solid fa-earth-americas"></i> Live Site</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="image/Screenshot (6).png" alt="">
+        <h2 class="project-title">UpStore</h2><br>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
+          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <br>
+        <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT</p>
+        <br>
+        <div class="project-link">
+          <a class="project-github-link" href="https://github.com/Milan677/unique-stretch-3372"><i
+              class="fa-brands fa-github"></i> Git Repo </a><br>
+          <a class="project-deployed-link" href="https://moonlit-taiyaki-1137b4.netlify.app/"><i
+              class="fa-solid fa-earth-americas"></i> Live Site</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="image/Screenshot (5).png" alt="">
+        <h2 class="project-title">Mayur Furnitures</h2><br>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
+          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <br>
+        <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT | NODE.JS</p>
+        <br>
+        <div class="project-link">
+          <a class="project-github-link" href="https://github.com/Milan677/uninterested-seashore-5867"><i
+              class="fa-brands fa-github"></i> Git Repo </a><br>
+          <a class="project-deployed-link" href="https://storied-biscuit-116d86.netlify.app/"><i
+              class="fa-solid fa-earth-americas"></i> Live Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- project session end -->
+
+  <!-- contact session start -->
+  <div id="contact">
+    <div class="main-title">
+      <h1 class="text">Contact me</h1>
+      <!-- <p class="text">Here is my projects to represent you my Experience</p> -->
+    </div>
+
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Kumandol Patana</div>
+          <div class="text-two">Khordha Odisha</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div id="contact-phone" class="text-one">+91 8144410927</div>
+       
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div id="contact-email" class="text-one">daskamlesh677@gmail.com</div>
+          
+        </div>
+        <div class="email details">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div class="topic">Linkdin</div>
+          <!-- <a id="contact-linkdin" class="text-one">codinglab@gmail.com</a> -->
+          <a id="contact-linkdin" class="text-one" href="https://www.linkedin.com/in/kamleshdas/">My Linkdin</a>
+          
+        </div>
+        <div class="email details">
+          <i class="fa-brands fa-github"></i>
+          <div class="topic">github</div>
+          <!-- <a id="contact-github" class="text-one">codinglab@gmail.com</a> -->
+          <a id="contact-github" class="text-one" href="https://github.com/Milan677">My Github</a>
+          
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from
+          here. It's my pleasure to help you.</p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email">
+          </div>
+          <div class="input-box message-box">
+            <input type="text" placeholder="Enter your message">
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- contact session end -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('.auto-input', {
+      strings: ["a  full stack developer", "a backend developer", "a web designer", "problem solver"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+  </script>
+
+</body>
+
+</html>
+
+<script>
+  ScrollReveal({
+    reset: true,
+    distance: "200px",
+    duration: 2500,
+    delay: 500
+  });
+  ScrollReveal().reveal('.about-left', { delay: 400, origin: 'left' });
+  ScrollReveal().reveal('.about-right', { delay: 400, origin: 'right' });
+  ScrollReveal().reveal('.text', { delay: 400, origin: 'bottom' });
+  ScrollReveal().reveal('.serv', { delay: 400, origin: 'bottom' });
+  ScrollReveal().reveal('.right', { delay: 400, origin: 'bottom' });
+  ScrollReveal().reveal('.col-left', { delay: 400, origin: 'left' });
+  ScrollReveal().reveal('.col-right', { delay: 400, origin: 'right' });
+  ScrollReveal().reveal('.project-card', { delay: 400, origin: 'bottom' });
+  // ScrollReveal().reveal('.box7 ', { delay: 400, origin: 'left' });
+  // ScrollReveal().reveal('.box8', { delay: 400, origin: 'bottom' });
+  // ScrollReveal().reveal('.box9', { delay: 400, origin: 'bottom' });
+  // ScrollReveal().reveal('.box10', { delay: 400, origin: 'right' });
+</script>
