@@ -23,6 +23,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My portfolio</title>
+
 </head>
 
 <body>
@@ -45,12 +46,12 @@
     </ul>
   </nav>
 
-
+  <!-- home session start -->
   <div id="home" class="content">
     <div class="left">
       <div class="up-down-animation">
         <img class="home-img"
-          src="https://dp.profilepics.in/profile_pictures/dp_for_boys/dp_for_boys_whatsapp_facebook_76.jpg" alt="">
+          src="image/dark_dp.jpg" alt="">
       </div>
     </div>
     <div class="right">
@@ -70,7 +71,9 @@
       <button class="home-btn"><a class="a" href="#about">About me</a></button>
     </div>
   </div>
+  <!-- home session end -->
 
+  <!-- about session start -->
   <div class="about section" id="about">
     <div class="main-title">
       <h1 class="text">About</h1>
@@ -78,7 +81,7 @@
     <div>
       <div class="about-left">
         <div class="about-image">
-          <img src="https://i.pinimg.com/originals/df/4c/9f/df4c9f22a28646e0ac084c718bc71dd9.jpg" alt="">
+          <img src="image/suit2.jpg" alt="">
         </div>
       </div>
       <div class="about-right">
@@ -110,7 +113,9 @@
     </div>
 
   </div>
+  <!-- about session end -->
 
+  <!-- service session start -->
   <div id="service">
     <div class="main-title">
       <h1 class="text">My Services</h1>
@@ -140,6 +145,7 @@
       </div>
     </div>
   </div>
+  <!-- service session end -->
 
   <!-- skill session start -->
   <div id="skills">
@@ -253,8 +259,7 @@
       <div class="project-card">
         <img src="image/Screenshot (8).png" alt="">
         <h2 class="project-title">Hot Chicken</h2><br>
-        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
-          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <p class="project-description">Hot Chicken is an e-commerce food ordering website! Here, you can browse through a wide selection of delicious food items based on fried chicken</p>
         <br>
         <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT</p>
         <br>
@@ -268,8 +273,7 @@
       <div class="project-card">
         <img src="image/Screenshot (6).png" alt="">
         <h2 class="project-title">UpStore</h2><br>
-        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
-          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <p class="project-description"> Up Store is an e-commerce website offering various products from clothing to home accessories.</p>
         <br>
         <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT</p>
         <br>
@@ -283,8 +287,7 @@
       <div class="project-card">
         <img src="image/Screenshot (5).png" alt="">
         <h2 class="project-title">Mayur Furnitures</h2><br>
-        <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio dolorem at,
-          vero minima magni quibusdam accusamus eum ex quis.</p>
+        <p class="project-description">Mayur is an e-commerce website offering various products from furniture to home goods.</p>
         <br>
         <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT | NODE.JS</p>
         <br>
@@ -292,6 +295,20 @@
           <a class="project-github-link" href="https://github.com/Milan677/uninterested-seashore-5867"><i
               class="fa-brands fa-github"></i> Git Repo </a><br>
           <a class="project-deployed-link" href="https://storied-biscuit-116d86.netlify.app/"><i
+              class="fa-solid fa-earth-americas"></i> Live Site</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="image/Screenshot (6).png" alt="">
+        <h2 class="project-title">UpStore</h2><br>
+        <p class="project-description">An e-commerce website offering various products from clothing to home accessories.</p>
+        <br>
+        <p class="project-tech-stack">Tech Stack:- HTML | CSS | JAVASCRIPT</p>
+        <br>
+        <div class="project-link">
+          <a class="project-github-link" href="https://github.com/Milan677/unique-stretch-3372"><i
+              class="fa-brands fa-github"></i> Git Repo </a><br>
+          <a class="project-deployed-link" href="https://moonlit-taiyaki-1137b4.netlify.app/"><i
               class="fa-solid fa-earth-americas"></i> Live Site</a>
         </div>
       </div>
@@ -346,16 +363,16 @@
           here. It's my pleasure to help you.</p>
         <form action="#">
           <div class="input-box">
-            <input type="text" placeholder="Enter your name">
+            <input id="name" type="text" placeholder="Enter your name">
           </div>
           <div class="input-box">
-            <input type="text" placeholder="Enter your email">
+            <input id="email" type="text" placeholder="Enter your email">
           </div>
           <div class="input-box message-box">
-            <input type="text" placeholder="Enter your message">
+            <input id="message" type="text" placeholder="Enter your message">
           </div>
           <div class="button">
-            <input type="button" value="Send Now">
+            <input onclick="sendEmail(),reset(); return false;" type="button" value="Send Now">
           </div>
         </form>
       </div>
@@ -368,16 +385,15 @@
     <!-- Loading stuff -->
     Loading the data just for you.
   </div>
-  <!-- github -->
 
   <p align=center>
-  <div  align=center>
+  <div align=center>
     <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
       <img id="github-streak-stats" align="left" width=390
         src="https://github-readme-streak-stats.herokuapp.com/?user=Milan677&theme=react&border=61dafb&hide_border=true"
         alt="Milan677" />
     </a>
-    <a  href="https://github.com/anuraghazra/github-readme-stats">
+    <a href="https://github.com/anuraghazra/github-readme-stats">
       <img id="github-top-langs" width=390 align="center"
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=Milan677&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true" />
     </a>
@@ -388,11 +404,11 @@
   </div>
   <br>
 
-  <img 
+  <img
     src="https://github-readme-activity-graph.cyclic.app/graph?username=Milan677&theme=react-dark&bg_color=20232a&hide_border=true"
     width="100%" />
   </p>
-
+  <!-- github -->
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
