@@ -19,7 +19,7 @@ body {
   padding: 0px;
   background: #111;
   overflow-x: hidden;
-
+ 
 }
 
 #nav-menu {
@@ -113,9 +113,11 @@ input[type="checkbox"] {
 #home {
   height: auto;
   width: 100%;
+  border-radius: 10px;
   margin-top: 25px;
   display: flex;
-
+   background: linear-gradient(to top right,rgb(225, 22, 22),black,black);
+   /* background: linear-gradient(to top ,rgb(225, 22, 22),black,black); */
 }
 
 #home div {
@@ -156,12 +158,12 @@ input[type="checkbox"] {
 }
 
 .up-down-animation {
-  width: 80%;
+  width: 100%;
   height: 95%;
   animation: up-down 3s ease-in-out infinite;
   margin: auto;
   border-radius: 20px;
-
+ 
 }
 
 @keyframes up-down {
@@ -177,6 +179,8 @@ input[type="checkbox"] {
     transform: translateY(0);
   }
 }
+
+
 
 .up-down-animation img {
   width: 100%;
@@ -278,6 +282,8 @@ input[type="checkbox"] {
   flex-direction: column;
   color: #FFF;
   text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(to top ,rgb(225, 22, 22),black ,black);
 }
 #about .main-title {
   max-width: 700px;
@@ -389,14 +395,146 @@ input[type="checkbox"] {
   font-size: large;
 }
 
+/*============education===========*/
+.timeline-section{
+  background: linear-gradient(to top ,rgb(225, 22, 22),black );
+	min-height: 100vh;
+	padding: 100px 15px;
+  border-radius: 10px;
+}
+.timeline-section .main-title {
+  max-width: 700px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: helvetica;
+}
+.timeline-section .main-title h1{
+	position: relative;
+	font-size: 40px;
+	color: #ffffff;
+	margin-bottom: 30px;
+	display: inline-block;
+
+}
+.timeline-section .main-title h1::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: #ffffff;
+  margin-top: -20px;
+}
+.timeline-section .main-title h1::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	background-color: #d03645;
+	top: calc(125% - 1px);
+	left: 50%;
+	transform: translateX(-50%);
+  margin-top: -20px;
+}
+
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #fff;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: left;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color:#fff;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #fff;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #000000;
+	padding: 30px;
+	border-radius: 5px;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color:orangered;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
 /*=========== service ==============*/
 #service{
   position: relative;
 	width: 100%;
 	min-height: 60vh;
+  border-radius: 10px;
+  background: linear-gradient(to top ,rgb(225, 22, 22),black);
+   
+}
 	/* padding: 10px 10%; */
   /* border: 2px solid red; */
-}
+
 #service .main-title {
   max-width: 700px;
   margin: 0px auto;
@@ -455,7 +593,8 @@ input[type="checkbox"] {
 .serv:hover {
 
   color: #FFF;
-  box-shadow: 0 4px 8px 0 orangered, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 orangered, 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background: linear-gradient(to bottom ,rgb(231, 78, 78) ,black);
 }
 
 .serv .fa-solid,
@@ -474,7 +613,7 @@ input[type="checkbox"] {
   width: 100%;
   min-height: 100vh;
   padding: 30px 10%;
-
+  background: linear-gradient(to bottom ,rgb(225, 22, 22),black,black);
 }
 
 #skills .main-title {
@@ -482,6 +621,7 @@ input[type="checkbox"] {
   margin: 0px auto;
   text-align: center;
   font-family: helvetica;
+
 }
 
 #skills .main-title h1 {
@@ -730,6 +870,7 @@ input[type="checkbox"] {
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left ,rgb(225, 22, 22),black,black);
 }
 
 #contact .main-title {
@@ -983,6 +1124,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+    
   }
 
   #home .left {
