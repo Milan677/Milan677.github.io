@@ -24,10 +24,10 @@ body {
 
 #nav-menu {
   display: flex;
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  top: 0px;
   height: 60px;
-  width: 98%;
+  width: 100%;
   border-radius: 20px;
   background: #1b1b1b;
   align-items: center;
@@ -38,6 +38,9 @@ body {
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 orangered, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 10
+}
+#main{
+  margin-top: 80px;
 }
 
 #nav-menu .logo {
@@ -70,6 +73,11 @@ body {
   display: inline-block;
 
 }
+#nav-menu ul li a .nav-link:hover,
+#nav-menu ul li a.active{
+  color:orangered
+}
+
 
 #nav-menu ul li a::before,
 #nav-menu ul li a::after {
@@ -1063,6 +1071,9 @@ input[type="checkbox"] {
   #nav-menu{
     position: fixed;
     top:0
+  }
+  #colorname{
+    font-size: 40px;
   }
  
   #nav-menu .menu-btn i {
