@@ -1215,6 +1215,10 @@ input[type="checkbox"] {
     width: 100%
   }
 
+  .right>h3 {
+    font-size: 2rem;
+  }
+
   /* about session */
   #about {
     height: auto;
