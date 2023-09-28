@@ -24,10 +24,10 @@ body {
 
 #nav-menu {
   display: flex;
-  position: fixed;
-  top: 0px;
+  position: sticky;
+  top: 20px;
   height: 60px;
-  width: 100%;
+  width: 98%;
   border-radius: 20px;
   background: #1b1b1b;
   align-items: center;
@@ -38,9 +38,6 @@ body {
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 orangered, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 10
-}
-#main{
-  margin-top: 80px;
 }
 
 #nav-menu .logo {
@@ -73,11 +70,6 @@ body {
   display: inline-block;
 
 }
-#nav-menu ul li a .nav-link:hover,
-#nav-menu ul li a.active{
-  color:orangered
-}
-
 
 #nav-menu ul li a::before,
 #nav-menu ul li a::after {
@@ -351,6 +343,8 @@ input[type="checkbox"] {
 .about-image {
   height: 80%;
   width: 80%;
+  /* max-height: 300px; */
+  /* max-width: 300px; */
   border-radius: 50%;
   animation: left-right 3s ease-in-out infinite;
 
@@ -670,10 +664,12 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  /* border:2px solid white */
 }
 
 .row .col {
   flex-basis: 46%;
+  /* border: 2px solid white; */
 }
 
 .row .sub-title h2 {
@@ -705,15 +701,87 @@ input[type="checkbox"] {
   background-color: orangered;
 }
 
-.subject {
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:25px;
+
+}
+.skills-container .skill{
+  height:140px;
+  text-align: center;
+  /* border:2px solid white */
+}
+.skill > img{
+  height:85%;
+  width:100%;
+  /* border:5px solid red */
+}
+.skill > p{
+  color: #fff;
+}
+.row1{
+  margin-top: 40px;
+  width:100%;
+  height:auto;
+
+}
+.row1 .sub-title h2 {
+  position: relative;
+  color: #fffefe;
+  font-size: 22px;
+  font-family: helvetica;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.row1 .sub-title h2::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: 125%;
+  left: 0;
+  background-color: #808080;
+}
+
+.row1 .sub-title h2::after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  top: calc(125% - 1px);
+  left: 0;
+  background-color: orangered;
+}
+.row1 .skill-container-1{
+   height: auto;
+   width:100%;
+  
+}
+.skill-container-1{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap:25px;
+
+}
+.skill-container-1 .skill{
+  height:140px;
+  text-align: center;
+  /* border:2px solid white */
+}
+
+/* .subject {
   font-size: 18px;
   font-weight: thin;
   color: #fffcfc;
   padding-bottom: 15px;
   text-transform: uppercase;
-}
+} */
 
-.progress-bar {
+
+
+/* .progress-bar {
   position: relative;
   width: 100%;
   height: 5px;
@@ -757,7 +825,10 @@ input[type="checkbox"] {
   left: 100%;
   transform: translate(-50%, -50%);
   background-color: orangered;
-}
+} */
+
+
+
 
 /*============ project session =============*/
 #projects {
@@ -1072,9 +1143,6 @@ input[type="checkbox"] {
     position: fixed;
     top:0
   }
-  #colorname{
-    font-size: 40px;
-  }
  
   #nav-menu .menu-btn i {
     display: block;
@@ -1171,6 +1239,10 @@ input[type="checkbox"] {
   .about-right {
     width: 100%
   }
+  .about-image{
+    max-height: 300px;
+    max-width: 300px;
+  }
 
   /* service session */
   #service {
@@ -1207,6 +1279,18 @@ input[type="checkbox"] {
 
   .row .col {
     margin-top: 30px;
+  }
+  .skills-container{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:25px;
+  }
+
+  .skill-container-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+  
   }
 
   /* project session */
@@ -1355,6 +1439,10 @@ input[type="checkbox"] {
 
 
   /* about session */
+  .about-image{
+    max-height: 300px;
+    max-width: 300px;
+  }
   /* #about {
     height: auto;
     margin: auto;
@@ -1410,6 +1498,17 @@ input[type="checkbox"] {
   }
   .row .col {
     margin-top: 30px;
+  }
+  .skills-container{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:25px;
+  }
+  .skill-container-1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+  
   }
 
   /* project session */
