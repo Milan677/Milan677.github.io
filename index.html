@@ -27,7 +27,7 @@
 </head>
 
 <body>
-  <nav id="nav-menu">
+  <nav id="nav-menu" class="sec">
     <!-- <div class="logo animated-text">Kamlesh</div> -->
     <div class="logo"><span class="k-animation logo">K</span>amlesh</div>
     <input type="checkbox" id="click">
@@ -47,7 +47,7 @@
   </nav>
 
   <!-- home session start -->
-  <div id="home" class="content">
+  <div id="home" class="content sec">
     <div class="left">
       <div class="up-down-animation">
         <img class="home-img"
@@ -74,7 +74,7 @@
   <!-- home session end -->
 
   <!-- about session start -->
-  <div class="about section" id="about">
+  <div class="about section sec" id="about">
     <div class="main-title">
       <h1 class="text">About</h1>
     </div>
@@ -116,7 +116,7 @@
   <!-- about session end -->
   
   <!-- education section start -->
-  <section class="timeline-section">
+  <section class="timeline-section sec">
     <div class="main-title">
       <h1 class="text">Education</h1>
       <p style="margin-top: -20px;" class="text">My educational qualifications..</p>
@@ -187,7 +187,7 @@
   <!-- educarion section end -->
 
   <!-- service session start -->
-  <div id="service">
+  <div id="service" class="sec">
     <div class="main-title">
       <h1 class="text">My Services</h1>
       <p class="text">Here is some of my best services</p>
@@ -220,7 +220,7 @@
   <!-- service session end -->
 
   <!-- skill session start -->
-  <div id="skills">
+  <div id="skills" class="sec">
     <!--   *******  Main Heading Starts  *******   -->
 
     <div class="main-title">
@@ -460,7 +460,7 @@
   <!-- skill session end -->
 
   <!-- project session start -->
-  <div id="projects">
+  <div id="projects" class="sec">
     <div class="main-title">
       <h1 class="text">My Projects</h1>
       <p class="text">Here is my projects to represent you my Experience</p>
@@ -531,7 +531,7 @@
   <!-- project session end -->
 
   <!-- contact session start -->
-  <div id="contact">
+  <div id="contact" class="sec">
     <div class="main-title">
       <h1 class="text">Contact me</h1>
     </div>
@@ -624,9 +624,9 @@
   </div>
   <br>
 
-  <img
+  <!-- <img
     src="https://github-readme-activity-graph.cyclic.app/graph?username=Milan677&theme=react-dark&bg_color=20232a&hide_border=true"
-    width="100%" />
+    width="100%" /> -->
   </p>
   <!-- github -->
 
@@ -693,7 +693,7 @@
 <script>
   // hambergur menu close automatically while clicking on any of the session.
     const navMenu = document.getElementById('nav-menu');
-    const navLinks = navMenu.querySelectorAll('ul li a');
+    const navLinks = document.querySelectorAll('ul li a');
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
@@ -703,5 +703,28 @@
         }
       });
     });
+  
+</script>
+
+<script>
+  // adding active nav links
+  let section=document.querySelectorAll(".sec");
+  const navLink = document.querySelectorAll('ul li a');
+
+  window.onscroll=()=>{
+    section.forEach(sec=>{
+      let top=window.scrollY;
+      let offset=sec.offsetTop;
+      let height=sec.offsetHeight;
+      let id=sec.getAttribute('id');
+
+      if(top>=offset && top<offset+height){
+        navLink.forEach(links=>{
+          links.classList.remove('active');
+          document.querySelector('ul li a[href*="' + id + '"]').classList.add('active')
+        })
+      }
+    })
+  }
   
 </script>
